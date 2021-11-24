@@ -10,16 +10,15 @@
             <!-- Menu section -->
             <div class="menu">
                 <ul>
-                    <li>Characters</li>
-                    <li>Comics</li>
-                    <li>Movies</li>
-                    <li>Tv</li>
-                    <li>Games</li>
-                    <li>Collectionables</li>
-                    <li>Videos</li>
-                    <li>Fans</li>
-                    <li>News</li>
-                    <li>Shop</li>
+                    <li> <a href="#"> Characters </a> </li>
+                    <li> <a href="#"> Comics </a> </li>
+                    <li> <a href="#"> Movies </a> </li>
+                    <li> <a href="#"> Tv </a> </li>
+                    <li> <a href="#"> Games </a> </li>
+                    <li> <a href="#"> Collectionables </a> </li>
+                    <li> <a href="#"> Videos </a> </li>
+                    <li> <a href="#"> Fans </a> </li>
+                    <li> <a href="#"> Shop </a> </li>
                 </ul>
             </div>
         </div>
@@ -40,7 +39,7 @@ export default {
     header {
         display: flex;
         justify-content: space-around;
-        height: 150px;
+        height: 120px;
 
         .logo {
             width: 40%;
@@ -57,16 +56,26 @@ export default {
             align-items: center;
             height: 100%;
             width: 60%;
+
             ul {
                 display: flex;
                 align-items: center;
                 list-style: none;
                 font-weight: 400;
+                height: 100%;
+
                 li {
                     padding: 0 1rem;
                     text-transform: uppercase;
-                    &:hover {
-                        color: $primary-color;
+
+                    a {
+                        text-decoration: none;
+                        color: currentColor;
+                        &:hover,
+                        &:active {
+                            cursor: pointer;
+                            color: $primary-color;
+                        }
                     }
                 }
             }
