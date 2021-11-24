@@ -24,7 +24,7 @@ export default {
         background-color: $black;
 
         h1{
-            padding: 3rem 5rem;
+            padding: 3rem 0;
         }
     }
 </style>

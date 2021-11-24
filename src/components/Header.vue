@@ -44,7 +44,6 @@ export default {
         .logo {
             width: 40%;
             display: flex;
-            justify-content: center;
             img {
                 padding: 1rem;
                 height: 100%;
