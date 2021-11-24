@@ -1,27 +1,28 @@
 <template>
-    <header class="container">
-        <!-- Logo section -->
-        <div class="logo">
-            <img src="../assets/dc-logo.png" alt="DC logo">
+    <header>
+        <!-- div di contenimento all'80% -->
+        <div class="container d-flex">
+            <!-- Logo section -->
+            <div class="logo">
+                <img src="../assets/dc-logo.png" alt="DC logo">
+            </div>
+
+            <!-- Menu section -->
+            <div class="menu">
+                <ul>
+                    <li>Characters</li>
+                    <li>Comics</li>
+                    <li>Movies</li>
+                    <li>Tv</li>
+                    <li>Games</li>
+                    <li>Collectionables</li>
+                    <li>Videos</li>
+                    <li>Fans</li>
+                    <li>News</li>
+                    <li>Shop</li>
+                </ul>
+            </div>
         </div>
-
-        <!-- Menu section -->
-        <div class="menu">
-            <ul>
-                <li>Characters</li>
-                <li>Comics</li>
-                <li>Movies</li>
-                <li>Tv</li>
-                <li>Games</li>
-                <li>Collectionables</li>
-                <li>Videos</li>
-                <li>Fans</li>
-                <li>News</li>
-                <li>Shop</li>
-            </ul>
-        </div>
-
-
     </header>
 
 </template>
@@ -33,34 +34,40 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    .container {
-        background-color: #2c3e50;;
+    @import '@/Style/utilities.scss';
+    @import '@/Style/variabili.scss';
+
+    header {
         display: flex;
-        align-items: center;
-        height: 100px;
+        justify-content: space-around;
+        height: 150px;
 
         .logo {
+            width: 40%;
             display: flex;
             justify-content: center;
-            width: 45%;
-            padding: 1rem;
-            
             img {
-            height: 100%;
+                padding: 1rem;
+                height: 100%;
             }
         }
 
-
         .menu {
+            display: flex;
+            align-items: center;
             height: 100%;
-            background-color: tomato;
+            width: 60%;
             ul {
                 display: flex;
                 align-items: center;
                 list-style: none;
+                font-weight: 400;
                 li {
-                    height: 100%;
+                    padding: 0 1rem;
                     text-transform: uppercase;
+                    &:hover {
+                        color: $primary-color;
+                    }
                 }
             }
         }

@@ -26,6 +26,9 @@ export default {
 
 // App general styles  
 <style lang="scss">
+// import font styles (Oswald | weight : 400 & 600)
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+
 * {
     padding: 0;
     margin: 0;
