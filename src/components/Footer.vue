@@ -19,7 +19,7 @@
                     </ul>
                 </div>
 
-                <!-- DC COMICS -->
+                <!-- SHOP -->
                 <div>
                     <h1>Shop</h1>
                     <ul>
@@ -28,7 +28,7 @@
                     </ul>
                 </div>
 
-                <!-- DC COMICS -->
+                <!-- DC -->
                 <div>
                     <h1>Dc</h1>
                     <ul>
@@ -46,7 +46,7 @@
                     </ul>
                 </div>
 
-                <!-- DC COMICS -->
+                <!-- SITES -->
                 <div>
                     <h1>Sites</h1>
                     <ul>
@@ -60,7 +60,9 @@
             </div>
 
             <!-- contatti -->
-            <div class="contacts"></div>
+            <div class="contacts">
+                <a href="">SIGN-UP NOW!</a>
+            </div>
         </div>
     </footer>
 
@@ -77,6 +79,7 @@ export default {
     @import '@/Style/variabili.scss';
 
     footer {
+        background-color: $dark-gray;
         color: white;
         max-height: auto;
         background-image: url('../assets/footer-bg.jpg');
@@ -107,6 +110,17 @@ export default {
                     font-size: 0.9rem;
                     text-transform: capitalize;
                 }
+            }
+        }
+
+        .contacts {
+            background-color: $dark-gray;
+            a {
+                text-decoration: none;
+                color: currentColor;
+                text-transform: uppercase;
+                padding: 0.5rem;
+                border: 2px solid $primary-color;
             }
         }
     }
